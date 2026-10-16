@@ -3,50 +3,168 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
-  <style>
-    :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --accent: #38bdf8; }
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, sans-serif; }
-    body { background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; max-width: 800px; margin: auto; }
-    header { text-align: center; margin-bottom: 3rem; }
-    h1 { color: var(--accent); font-size: 2.2rem; }
-    section { margin-bottom: 2.5rem; }
-    h2 { border-bottom: 2px solid var(--card); padding-bottom: 0.5rem; margin-bottom: 1rem; color: #fff; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
-    .card { background: var(--card); padding: 1.2rem; border-radius: 8px; border: 1px solid #334155; }
-    .card h3 { color: var(--accent); margin-bottom: 0.5rem; }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+  <meta name="theme-color" content="#0b1220" />
+  <meta name="description" content="Avinash Maurya — cybersecurity, vulnerability assessment, penetration testing, and application security." />
+  <title>Avinash Maurya | Cybersecurity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Alex Doe</h1>
-    <p>Security Analyst & Full-Stack Developer</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Avinash Maurya home">AM<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#focus">Focus areas</a>
+      <a href="#connect">Connect</a>
+    </nav>
+    <a class="header-link" href="https://www.linkedin.com/in/avinash-maurya-0479431ba/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>Welcome to my portfolio! I specialize in web security, automation pipelines, and building resilient web applications.</p>
-  </section>
-
-  <section>
-    <h2>Featured Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Vulnerability Scanner</h3>
-        <p>Automated security triage pipeline using Python and Docker CLI.</p>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> CYBERSECURITY · KADI, GUJARAT, INDIA</p>
+        <h1 id="hero-title">Avinash<br /><span>Maurya.</span></h1>
+        <p class="hero-summary">#VA/PT #NetworkPT #WebApplicationTesting<br />#CyberSecurity #InfoSec #AppSec</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#focus">Explore my interests <span aria-hidden="true">↓</span></a>
+          <a class="button button-text" href="#connect">Connect with me <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
-      <div class="card">
-        <h3>E-Commerce Platform</h3>
-        <p>Lightweight responsive storefront integrated with instant checkout.</p>
-      </div>
-    </div>
-  </section>
+      <aside class="hero-note" aria-label="Cybersecurity interests">
+        <span class="note-index">PROFILE</span>
+        <span class="note-mark" aria-hidden="true">⌁</span>
+        <p>Avinash Maurya<br />He / Him</p>
+        <span class="note-caption">KADI · GUJARAT · INDIA</span>
+      </aside>
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+    </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Find me on <a href="https://github.com" target="_blank">GitHub</a> or <a href="https://linkedin.com" target="_blank">LinkedIn</a>.</p>
-  </section>
+    <section class="about section-shell" id="about" aria-labelledby="about-title">
+      <div class="section-label"><span>01</span> A LITTLE ABOUT ME</div>
+      <div class="about-content">
+        <h2 id="about-title">Cybersecurity, networks, and <span>web application testing.</span></h2>
+        <div class="about-details">
+          <p>I’m Avinash Maurya (he/him), based in Kadi, Gujarat, India. My LinkedIn profile highlights vulnerability assessment and penetration testing, network penetration testing, web application testing, cybersecurity, information security, and application security.</p>
+          <p>My profile lists Appitsimple Infotek Pvt. Ltd. and KSV University. It shows 114 connections and 115 followers.</p>
+          <a class="inline-link" href="https://www.linkedin.com/in/avinash-maurya-0479431ba/" target="_blank" rel="noopener noreferrer">More about me on LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="profile-details section-shell" aria-labelledby="details-title">
+      <div class="section-label"><span>02</span> PROFILE DETAILS</div>
+      <div class="focus-heading">
+        <h2 id="details-title">A few useful details<span>.</span></h2>
+        <p>Information shown on my LinkedIn profile.</p>
+      </div>
+      <dl class="details-grid">
+        <div class="detail-item">
+          <dt>Location</dt>
+          <dd>Kadi, Gujarat, India</dd>
+        </div>
+        <div class="detail-item">
+          <dt>Pronouns</dt>
+          <dd>He / Him</dd>
+        </div>
+        <div class="detail-item">
+          <dt>Company listed</dt>
+          <dd>Appitsimple Infotek Pvt. Ltd.</dd>
+        </div>
+        <div class="detail-item">
+          <dt>University listed</dt>
+          <dd>KSV University</dd>
+        </div>
+        <div class="detail-item">
+          <dt>Connections</dt>
+          <dd>114</dd>
+        </div>
+        <div class="detail-item">
+          <dt>Followers</dt>
+          <dd>115</dd>
+        </div>
+        <div class="detail-item">
+          <dt>Profile language</dt>
+          <dd>English</dd>
+        </div>
+        <div class="detail-item">
+          <dt>Recent activity</dt>
+          <dd>Congratulated Sharma Gaurav on a post</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="focus section-shell" id="focus" aria-labelledby="focus-title">
+      <div class="section-label"><span>03</span> AREAS OF INTEREST</div>
+      <div class="focus-heading">
+        <h2 id="focus-title">What I’m focused on<span>.</span></h2>
+        <p>Areas I’m interested in exploring and learning more about.</p>
+      </div>
+      <div class="focus-grid">
+        <article class="focus-card">
+          <span class="card-number">01</span>
+          <span class="card-icon" aria-hidden="true">⌘</span>
+          <h3>Vulnerability Assessment &amp; Penetration Testing</h3>
+          <p>Finding and understanding weaknesses through authorized security testing.</p>
+          <span class="card-tag">VA / PT</span>
+        </article>
+        <article class="focus-card">
+          <span class="card-number">02</span>
+          <span class="card-icon" aria-hidden="true">⌁</span>
+          <h3>Network Security</h3>
+          <p>Exploring network security and the practices that help protect connected systems.</p>
+          <span class="card-tag">NETWORK PT</span>
+        </article>
+        <article class="focus-card">
+          <span class="card-number">03</span>
+          <span class="card-icon" aria-hidden="true">⟨/⟩</span>
+          <h3>Web Application Security</h3>
+          <p>Learning how to assess web applications and improve their security posture.</p>
+          <span class="card-tag">WEB APP TESTING</span>
+        </article>
+      </div>
+      <div class="profile-tags" aria-labelledby="tags-title">
+        <h3 id="tags-title">More topics from my profile</h3>
+        <ul class="tag-list">
+          <li>#VA/PT</li>
+          <li>#NetworkPT</li>
+          <li>#WebApplicationTesting</li>
+          <li>#CyberSecurity</li>
+          <li>#InfoSec</li>
+          <li>#SecurityOperations</li>
+          <li>#AppSec</li>
+          <li>#CyberDefense</li>
+          <li>#SecurityIncident</li>
+          <li>#DigitalSecurity</li>
+          <li>#CyberSupport</li>
+          <li>#ITSecurity</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="connect section-shell" id="connect" aria-labelledby="connect-title">
+      <div class="section-label"><span>04</span> LET’S CONNECT</div>
+      <div class="connect-content">
+        <div>
+          <h2 id="connect-title">Good security starts with a <span>conversation.</span></h2>
+          <p>Interested in cybersecurity too? Find me on LinkedIn or explore my code on GitHub.</p>
+        </div>
+        <div class="connect-links">
+          <a class="connect-link" href="https://www.linkedin.com/in/avinash-maurya-0479431ba/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><span aria-hidden="true">↗</span></a>
+          <a class="connect-link" href="https://github.com/Avinashmaurya9714" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark" href="#home" aria-label="Back to top">AM<span>.</span></a>
+    <p>Designed with curiosity in Kadi, Gujarat.</p>
+    <span>© <span id="year">2026</span> Avinash Maurya</span>
+  </footer>
 </body>
 </html>
